@@ -1,0 +1,2 @@
+[console_scripts]
+tarjan_planner = tarjan_planner__main__:main.py
