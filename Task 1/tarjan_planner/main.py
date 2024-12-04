@@ -54,7 +54,7 @@ def main():
         elif userOption == 4: 
             try:
                 print("Available locations:", ", ".join(planner.relatives.keys()))
-                location_to_remove = input("Enter the name of the location to remove: ")
+                location_to_remove = input("Enter the name of the location to remove: ").strip()
                 planner.remove_location(location_to_remove)
             except KeyError:
                 print(f"Error: The location '{location_to_remove}' does not exist.\n")
