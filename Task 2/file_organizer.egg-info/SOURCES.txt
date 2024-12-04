@@ -1,0 +1,13 @@
+setup.py
+file_organizer/__init__.py
+file_organizer/__main__.py
+file_organizer/config.py
+file_organizer/file_sorter.py
+file_organizer/interface.py
+file_organizer/logger.py
+file_organizer/main.py
+file_organizer.egg-info/PKG-INFO
+file_organizer.egg-info/SOURCES.txt
+file_organizer.egg-info/dependency_links.txt
+file_organizer.egg-info/entry_points.txt
+file_organizer.egg-info/top_level.txt

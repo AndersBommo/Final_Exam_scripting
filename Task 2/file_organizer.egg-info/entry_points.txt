@@ -1,0 +1,2 @@
+[console_scripts]
+file_organizer = file_organizer.main:main

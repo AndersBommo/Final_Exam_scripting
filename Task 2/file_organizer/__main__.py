@@ -1,4 +1,4 @@
-from tarjan_planner.main import main
+from file_organizer.main import main
 
 if __name__ == "__main__":
     main() 
