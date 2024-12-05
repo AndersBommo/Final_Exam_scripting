@@ -51,9 +51,9 @@ ACIT_4420_scripting_exam
 │   │   ├── interface.py
 │   │   ├── main.py
 │   │   ├── route_bruteforce.py
+│   │   ├── tests
 │   │   └── time_logger.py
 │   ├── tarjan_planner.egg-info
-│   ├── tests
 │   └── setup.py
 ├── task2
 │    ├── build
@@ -65,7 +65,9 @@ ACIT_4420_scripting_exam
 │    │   ├── file_sorter.py
 │    │   ├── interface.py
 │    │   ├── logger.py
-│    │   └── main.py
+│    │   ├── main.py
+|    |   ├──  tests
+|    |      └──  test_file_sorter.py
 │    ├── file_organizer.egg-info
 │    ├── file_organizer.log
 │    └── setup.py

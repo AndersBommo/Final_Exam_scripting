@@ -147,8 +147,6 @@ class RoutePlanner:
                 best_metric = total_metric
                 best_route = route
 
-        print(best_metric, preference)
-
         return best_route, best_metric
 
     def build_graph(self, preference, mode=[]):
@@ -187,9 +185,13 @@ class RoutePlanner:
             for start, end in zip(best_route[:-1], best_route[1:])
         ]
 
-        print(f"Shortest route: {best_route}")
-        print(f"Total distance: {best_metric:.2f} km")
-        return best_route, best_metric, route_modes
+        total_distance = 0
+        for i in range(len(best_route) - 1):
+            start, end = best_route[i], best_route[i + 1]
+            total_distance += self.graph[start][end]["distance"]
+        #print(f"Shortest route: {best_route}")
+        #print(f"Total distance: {total_distance:.2f} km")
+        return best_route, best_metric, route_modes, total_distance
 
     
     def get_route_transport_modes(self, route):
@@ -200,7 +202,7 @@ class RoutePlanner:
             transport_modes.append((start, end, mode))
         return transport_modes
 
-    #### SJEKK DENNE####
+    
     def save_route(self, route_name, route, distance, transport_modes):
         if route_name in self.saved_routes:
             print(f"A route named '{route_name}' already exists. Overwriting it.")

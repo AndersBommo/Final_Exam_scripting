@@ -23,9 +23,9 @@ def main():
                 print("Please wait for route calculation")
 
                 # Unpack the result with execution time
-                best_route, best_distance, route_modes = planner.find_best_route_all_relatives(preference)
-                interface.print_route_information(best_route, best_distance, preference, route_modes)
-
+                best_route, best_distance, route_modes, total_distance = planner.find_best_route_all_relatives(preference)
+                interface.print_route_information(best_route, best_distance, preference, route_modes,total_distance)
+                planner.plot_route(best_route, preference, show=True, save = None)
                 print("Do you wish to save this route?\n")
                 save = input("yes or no\n").strip().lower()
                 if save == "yes":

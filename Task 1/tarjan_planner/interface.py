@@ -43,12 +43,17 @@ class UserInterface:
 
 
     @staticmethod
-    def print_route_information(route, distance, preference, route_modes):
-        print(f"Optimal route based on {preference}:")
-        #print(f"Route: {route}")
-        print(f"Distance: {distance:.2f} km")
-        #print(f"Execution time: {execution_time:.2f} seconds")
-
+    def print_route_information(route, metric, preference, route_modes, total_distance):
+        print(f"Optimal route based {preference}:")
+        print(f"Route: {route}")
+        print(f"Total Distance: {total_distance:.2f} km")
+        if preference == "time": 
+            print(f"time spent traveling: {60*metric:.2f} minutes")
+        if preference == "cost": 
+            print(f"cost for the journey:  {metric:.2f}")
+        if preference == "transfers": 
+            print(f"Time spent on transfers: {60*metric:.2f} minutes")
+            
         print("\nTransport Modes:")
         for start, end, mode in route_modes:
             print(f"{start} -> {end}: {mode}")

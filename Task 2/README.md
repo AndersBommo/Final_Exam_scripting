@@ -41,7 +41,9 @@ python -m file_organizer
 |   |   ├──  file_sorter.py
 |   |   ├──  interface.py
 |   |   ├──  logger.py
-|   |   └── main.py
+|   |   ├── main.py
+|   |   ├──  tests
+|   |       └──  test_file_sorter.py
 |   ├──  file_organizer.egg-info
 |   ├──  file_organizer.log
 |   └── setup.py
