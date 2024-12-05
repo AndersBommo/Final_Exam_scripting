@@ -14,10 +14,6 @@ class UserInterface:
         userInput = input()
         return userInput
 
-
-       
-
-
     @staticmethod
     def get_user_preference():
         """

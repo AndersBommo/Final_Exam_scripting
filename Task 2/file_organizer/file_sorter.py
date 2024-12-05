@@ -1,3 +1,4 @@
+#file_sorter.py
 import os
 import shutil
 from file_organizer.config import FILE_TYPE_MAP

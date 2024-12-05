@@ -1,3 +1,4 @@
+#route_bruteforce.py
 import itertools
 import networkx as nx
 from tarjan_planner.distance_calculator import DistanceCalculator
@@ -27,10 +28,10 @@ class RoutePlanner:
             "Relative_4": (37.5219, 127.0411),
             "Relative_5": (37.5340, 127.0026),
             "Relative_6": (37.5443, 127.0557),
-            #"Relative_7": (37.5172, 127.0391),
-            #"Relative_8": (37.5800, 126.9844),
-            #"Relative_9": (37.5110, 127.0590),
-            #"Relative_10": (37.5133, 127.1028),
+            "Relative_7": (37.5172, 127.0391),
+            "Relative_8": (37.5800, 126.9844),
+            "Relative_9": (37.5110, 127.0590),
+            "Relative_10": (37.5133, 127.1028),
             
         }
     
